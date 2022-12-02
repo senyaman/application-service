@@ -2,7 +2,7 @@ package com.enfint.applicationservice.controller;
 
 import com.enfint.applicationservice.dto.LoanApplicationRequestDTO;
 import com.enfint.applicationservice.dto.LoanOfferDTO;
-import com.enfint.applicationservice.service.impl.ApplicationService;
+import com.enfint.applicationservice.service.ApplicationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

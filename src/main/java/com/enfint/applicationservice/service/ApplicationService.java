@@ -1,4 +1,4 @@
-package com.enfint.applicationservice.service.impl;
+package com.enfint.applicationservice.service;
 
 import com.enfint.applicationservice.dto.LoanApplicationRequestDTO;
 import com.enfint.applicationservice.dto.LoanOfferDTO;
