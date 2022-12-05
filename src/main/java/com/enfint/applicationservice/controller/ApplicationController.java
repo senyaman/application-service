@@ -18,13 +18,13 @@ public class ApplicationController {
     private final ApplicationService applicationService;
 
     @PostMapping
-    ResponseEntity<List<LoanOfferDTO>> loanApplication(@Valid @RequestBody LoanApplicationRequestDTO loanApplicationRequest) {
+    public ResponseEntity<List<LoanOfferDTO>> loanApplication(@Valid @RequestBody LoanApplicationRequestDTO loanApplicationRequest) {
         List<LoanOfferDTO> loanOffers = applicationService.loanApplication(loanApplicationRequest);
         return ResponseEntity.ok(loanOffers);
     }
 
     @PutMapping("/offer")
-    void updateOffer(@RequestBody LoanOfferDTO loanOffer) {
+    public void updateOffer(@RequestBody LoanOfferDTO loanOffer) {
         applicationService.selectOffer(loanOffer);
     }
 }
